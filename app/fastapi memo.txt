@@ -56,6 +56,25 @@ git commit -m "first commit"
 git branch -M main
 git remote add heroku https://git.heroku.com/fastapi-dliu.git
 
+heroku login
+
+heroku git:remote -a dliu-fastapi
 git push -u heroku main
 
 heroku create fastapi-dliu
+heroku logs --tail
+heroku addons:create heroku-postgresql:hobby-dev
+Host
+ec2-174-129-16-183.compute-1.amazonaws.com
+Database
+depj2usqddhf4f
+User
+mkbgwjfaqbcynm
+Port
+5432
+Password
+4c6f4902067aa646877f3f28a5fd40868ec72bc4a045e532933438da221c1130
+URI
+postgres://mkbgwjfaqbcynm:4c6f4902067aa646877f3f28a5fd40868ec72bc4a045e532933438da221c1130@ec2-174-129-16-183.compute-1.amazonaws.com:5432/depj2usqddhf4f
+Heroku CLI
+heroku pg:psql postgresql-vertical-88380 --app dliu-fastapi
