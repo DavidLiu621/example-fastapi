@@ -10,8 +10,9 @@ openssl rand -hex 32
 JWT means "JSON Web Tokens".
 pm.environment.set("JWT", pm.response.json().access_token);
 
-pip install fastapi
+pip install fastapi[all]
 pip install uvicorn
+
 
 uvicorn app.main:app --reload
 
@@ -28,4 +29,33 @@ that allows a server to indicate any origins (domain, scheme, or port)
 other than its own from which a browser should permit loading resources.
 
 pip freeze > requirenments.txt
-pip install -r  reqirements.txt
+
+pip install -r requirements.txt 
+
+git remote -v
+
+git init 
+git add --all
+git commit -m "inital commit"
+git branch -M main
+git remote add origin https://github.com/DavidLiu621/example-fastapi.git
+
+C:\fastapi\venv\Scripts\python.exe -m pip install --upgrade pip
+
+
+c:\mytest>git clone https://github.com/DavidLiu621/example-fastapi.git
+Cloning into 'example-fastapi'.
+
+git pull origin main
+
+or create a new repository on the command line
+echo "# MyLeaningProjects" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add heroku https://git.heroku.com/fastapi-dliu.git
+
+git push -u heroku main
+
+heroku create fastapi-dliu
