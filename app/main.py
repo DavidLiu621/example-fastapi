@@ -29,5 +29,5 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message": "Hello Heroku World "}
+    return {"message": "Hello Heroku World with github actions CI/CD "}
 
